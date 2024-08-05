@@ -10,9 +10,9 @@ const addChanges = (data) => {
   
 
 fs.watch(filePath, (eventType, filename) => {
-    console.log(eventType,"type");
+    console.log(eventType,"event type");
     
-    console.log(filename,"name");
+    console.log(filename,"filename");
     })
 
     setTimeout(() => { addChanges("new changes"); }, 1000);
