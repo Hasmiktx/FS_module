@@ -35,7 +35,7 @@ listFilesRecursively(dirToScan);
 async function copyDirectory(src, dest) {
     try {
         const entries = await fsp.readdir(src, { withFileTypes: true });
-        //    console.log(entries,"ent")
+        
         await fsp.mkdir(dest, { recursive: true });
 
         for (const entry of entries) {
